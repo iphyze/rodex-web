@@ -1,0 +1,105 @@
+<!-- <div className="home-container home-container-image">
+          
+    <div className="home-container-image-overlay">
+        
+      <div className="home-container-col lg-home-container">
+          
+      <div className="page-title">Rodex Mix</div>    
+          
+      <SearchFormContainer />    
+          
+      <div className="home-welcome-box wow fadeIn rodex-hw" data-wow-duration='0.8s'>    
+      
+      <div className="album-cover">
+          
+      <div className="album-cover-imgbox">
+      <img src={Album_Image} alt="album-img" className="album-cimg"/>    
+      </div>
+          
+      <div className="album-cover-textbox">
+      
+      <div className="album-cover-artist">Now Playing</div>    
+      <div className="album-cover-description">Okopi Peterson whose full name is Adikwu, Peterson Okopi is a gospel recording artiste, song writer</div>    
+      <div className="album-cover-title">Madunile ft Tkeyz</div>    
+          
+      </div>
+          
+      </div>    
+          
+          
+      </div>        
+          
+      
+      <div className="genre-flexbox">
+          
+      {/* <a className="genre-btn active-genre" onclick="filterSongs('All Genres')">All Genres</a>
+      <a className="genre-btn" onclick="filterSongs('Afrosounds')">Afrosounds</a>
+      <a className="genre-btn" onclick="filterSongs('Gospel')">Gospel</a>
+      <a className="genre-btn" onclick="filterSongs('HipHop')">HipHop</a>
+      <a className="genre-btn" onclick="filterSongs('Latin')">Latin</a>
+      <a className="genre-btn" onclick="filterSongs('Jazz/Blues')">Jazz/Blues</a>
+      <a className="genre-btn" onclick="filterSongs('Carribean')">Carribean</a>
+      <a className="genre-btn" onclick="filterSongs('Pop')">Pop</a>
+      <a className="genre-btn" onclick="filterSongs('R&B')">R&B</a>
+      <a className="genre-btn" onclick="filterSongs('Electronic')">Electronic</a>
+      <a className="genre-btn" onclick="filterSongs('Rock')">Rock</a>
+      <a className="genre-btn" onclick="filterSongs('Country')">Country</a>
+      <a className="genre-btn" onclick="filterSongs('Instrumental')">Instrumental</a> */}
+          
+      </div>    
+      
+      
+      <div className="playlist-songs-header">
+          
+      <div className="playlist-number">#</div>
+      <div className="playlist-title">Title</div>    
+      <div className="playlist-time hide-time">Time</div>    
+      <div className="playlist-action">Action</div>        
+          
+          
+      </div>    
+          
+          
+    {playlistSongs.map(song => {
+      return(
+    <motion.div key={song.id} 
+    className="playlist-songs-flexbox remove-shadow"
+    variants={fadeInUpTwo}
+    initial="hidden"
+    animate="show"
+    >
+      <div className="playlist-number">{song.id}</div>
+      <div className="playlist-title">
+        <div className="playlist-imagebox">
+          <img src={song.image} className="playlist-img" alt="playlist-image"/>
+        </div>
+        <div className="playlist-songs-wrapper">
+          <div className="playlist-name-data">
+            <div className="playlist-stitle">{song.title}</div> <span className='track-separator'>-</span> <div className="playlist-aname">{song.artist}</div>
+          </div>
+          <div className="playlist-genre">{song.genre}</div>
+        </div>
+      </div>
+      <div className="playlist-time hide-time">{song.time}</div>
+      <div className="playlist-action">
+        <div className="fas fa-share-alt action-icons share-btn"></div>
+        <div className="fas fa-heart action-icons favorite-btn"></div>
+        <div className="fas fa-plus-circle action-icons playlist-btn"></div>
+      </div>
+      <div className="fas fa-play playlist-play-btn"></div>
+    </motion.div>
+      )
+  })}
+          
+          
+          
+      <div id="no-songs-message" style={{display: "none"}}>There are no songs found for the selected genre!</div>
+          
+              
+          
+      </div>
+
+      
+    </div>
+
+  </div> -->

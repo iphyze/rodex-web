@@ -1,0 +1,8 @@
+<label>
+  <input type="checkbox" checked={theme === 'dark'} onChange={handleToggleTheme} disabled={defaultEnabled}/>
+  Dark Mode
+</label>
+<label>
+  <input type="checkbox" checked={defaultEnabled} onChange={handleToggleDefault} />
+  Default Mode
+</label>
